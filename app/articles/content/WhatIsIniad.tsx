@@ -1,5 +1,5 @@
-import Text from '../components/text'
-import H from '../components/heading'
+import Text from '../../components/text'
+import H from '../../components/heading'
 
 export default function WhatIsIniad() {
   const calcGrade = () =>{
