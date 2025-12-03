@@ -1,0 +1,30 @@
+import WhatIsIniad from "app/articles/WhatIsIniad";
+import CS1 from "app/articles/cs";
+
+
+export type Article = {
+  id: string;
+  title: string;
+  author: string;
+  date: string;
+  content: React.ReactNode
+
+};
+
+
+export const articles: Article[] = [
+{
+"id": "what-is-iniad",
+"title": "INIADとは",
+"author": "0x7b",
+"date": "2025-12-02",
+"content": <WhatIsIniad/>
+},
+{
+"id": "cs1",
+"title": "コンピュータ・サイエンス概論1",
+"author": "0x7b",
+"date": "2025-12-02",
+"content": <CS1/>
+}
+]

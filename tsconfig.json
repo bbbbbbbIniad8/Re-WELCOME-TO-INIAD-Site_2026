@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    // ★★★ 必須の修正 ★★★
+    // 1. baseUrl をプロジェクトルートに設定
+    "baseUrl": ".", 
+    // 2. パスをプロジェクトルート ("./") から正しく指定し直す
+    "paths": {
+      // @/ はルートの app/ ディレクトリを参照するように変更
+      "@/*": ["./welcome_site/app/*"], 
+      // components はルートから直接参照
+      "@/components/*": ["./welcome_site/components/*"], 
+      "@/articles/*": ["./welcome_site/app/src/articles/*"],
+      "@/data/*": ["./welcome_site/app/src/data/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts",
+    "**/*.mts"
+  ],
+  "exclude": ["node_modules"]
+}
