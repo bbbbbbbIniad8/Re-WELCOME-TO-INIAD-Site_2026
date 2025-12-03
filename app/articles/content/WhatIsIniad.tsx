@@ -23,7 +23,7 @@ export default function WhatIsIniad() {
         <br></br>
         <H>INIAD〇期生</H>
         <Text>情報連携学部では、入学年に合わせて、INIAD〇期生を自称する文化が存在する。
-          SNSなどで、これを記載することで相手に自分の学年を伝えることが可能。</Text>
+          SNSなどで、これを記載することで相手に自分の学年を伝えることが可能である。</Text>
         <table style={{
             borderCollapse: 'collapse', 
             width: '300px'
