@@ -2,9 +2,9 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  // ↓ ここを追加
   output: 'export',
-  // SSGではnext/imageが利用できない。今回はunoptimizedで割愛
+  basePath: '/Re-WELCOME-TO-INIAD-Site_2026',
+  assetPrefix: '/Re-WELCOME-TO-INIAD-Site_2026/',
   images: {
     unoptimized: true,
   }

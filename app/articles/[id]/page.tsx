@@ -13,7 +13,7 @@ type Props = {
   };
 };
 
-// 静的パス生成
+
 export async function generateStaticParams() {
   return articles.map((a) => ({
     id: a.id,
@@ -21,7 +21,7 @@ export async function generateStaticParams() {
 }
 
 export default async function ArticlePage({ params }: Props) {
-  const id = (await params).id;
+  const id =  params.id;
   const article = articles.find((a) => a.id === id);
   if (!article) return notFound();
 
