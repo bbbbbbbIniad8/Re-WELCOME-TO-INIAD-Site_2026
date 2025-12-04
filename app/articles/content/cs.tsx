@@ -1,12 +1,17 @@
 import Text from '../../components/text'
 import H from '../../components/heading'
+import LecTable from 'app/components/lectureTable';
 
 export default function CS1() {
   return (
     <>
+      
+        
         <H>概要</H>
-        <Text><b>コンピュータ・サイエンス概論</b>とは、1年春学期に全員が受講しなければならない必修科目の1つである。</Text>
+        <Text><b>コンピュータ・サイエンス概論1</b>とは、1年春学期に全員が受講しなければならない必修科目の1つである。</Text>
         <Text>略してCS概論1と呼ばれることが多い。</Text>
+        
+        <LecTable name="コンピューターサイエンス概論1" unit={4} frequency="週2" test="中間・期末"/>
 
         <H>何を学ぶのか？</H>
         <Text>pythonの基本的な文法や、html、CSSなどのマークアップ言語、Github、正規表現、APIの使い方などを学習する。</Text>
@@ -18,9 +23,9 @@ export default function CS1() {
         <Text>
             かなり簡単な内容なのだが、パソコン完全初心者の場合前半でも躓いてしまうことがあるため入学前の予習をお勧めする。
             単純に「python」というプログラミング言語の基礎的な部分を徹底的に学習すれば、不足はないはずだ。そのついでに、VSコード等の
-            コードエディタをパソコンにインストールするといいかんじになる。
+            コードエディタをパソコンにインストールするといいかんじになる。また、この講義の最初の方の授業スライドは一般公開しているのでそれを活用しよう。
         </Text>
-
+        <a href="https://admission.iniad.org/courses">INIAD Moocs</a>
           
     </>
   );
