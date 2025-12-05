@@ -18,5 +18,11 @@ export const articles: Article[] = [
 "title": "コンピュータ・サイエンス概論1",
 "author": "0x7b",
 "date": "2025-12-02",
+},
+{
+"id": "learn",
+"title": "入学前にするべきこと",
+"author": "0x7b",
+"date": "2025-12-02",
 }
 ]

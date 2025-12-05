@@ -45,6 +45,20 @@ th,td{
   transition: color 0.2s;
 }
 
+.content *{
+  margin: 5;
+}
+
+h2{
+  border-bottom: 2px black solid;
+  font-size:20;
+  font-weight: 500;
+  margin-left: 30px;
+  padding-left: 1rem;
+  background-color: rgb(7, 255, 172);
+  border-radius: 5;
+}
+
 a:hover {
   color: #005bb5;
 }

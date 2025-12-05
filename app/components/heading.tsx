@@ -16,9 +16,9 @@ const H = ({children}: Props) => {
         color: 'aqua'
     }
     return (
-        <h2 style={headerStyle}>
+        <div style={headerStyle}>
             {children}
-        </h2>
+        </div>
     )
 
 }
