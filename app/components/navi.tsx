@@ -14,7 +14,14 @@ const Navi = () => {
     } as const;
     return (
        <ul style={naviStyle}>
-        {articles.map((a) => (
+        <p>基本</p>
+        {articles.filter((a) => a.category === "base").map((a)=> (
+          <li key={a.id} >
+            <Link href={`/articles/${a.id}`}>{a.title}</Link>
+          </li>
+        ))}
+        <p>講義一覧</p>
+        {articles.filter((a) => a.category === "lecture").map((a)=> (
           <li key={a.id} >
             <Link href={`/articles/${a.id}`}>{a.title}</Link>
           </li>
