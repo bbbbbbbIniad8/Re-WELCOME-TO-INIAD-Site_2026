@@ -4,6 +4,23 @@ type Props = {
   children: React.ReactNode;
 };
 
+const SubH = ({children} : Props) =>{
+    const subHstyle = {
+        marginLeft: '1rem',
+        borderBottom: '2px black solid',
+        fontSize:20,
+        fontWeight: 500,
+        paddingLeft: '1rem',
+        backgroundColor: 'rgb(7, 255, 172)',
+        borderRadius: 5,
+    }
+    return (
+        <h2 style={subHstyle}>
+            {children}
+            </h2>
+    )
+}
+
 const H = ({children}: Props) => {
     const Style = {
         margin: 5,
@@ -23,4 +40,4 @@ const H = ({children}: Props) => {
 
 }
 
-export default H;
+export { H, SubH};

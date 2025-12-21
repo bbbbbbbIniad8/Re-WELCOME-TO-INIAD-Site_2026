@@ -26,7 +26,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ id: st
         <div style={{display:'flex', flexDirection: "row"}}>
           <Navi/>
           <Content>
-            <Title title={article.title} author={article.author} date={article.date} category={article.category}></Title>
+            <Title article={article} author={article.author} category={article.category}></Title>
             <ContentComponent/>
           </Content>
         </div>

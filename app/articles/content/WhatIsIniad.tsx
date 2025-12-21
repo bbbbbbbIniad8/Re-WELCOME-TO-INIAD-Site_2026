@@ -1,5 +1,5 @@
-import Text from '../../components/text'
-import H from '../../components/heading'
+import { Text } from '../../components/text'
+import { H } from '../../components/heading'
 
 export default function WhatIsIniad() {
   const calcGrade = () =>{
@@ -12,7 +12,7 @@ export default function WhatIsIniad() {
   }
   const gradeList = calcGrade();
   return (
-    <>
+    <>  
         <H>概要</H>
         <Text><b>INIAD</b>とは情報連携学部の略称である。学外ではあまり浸透していないが、情報連携学部の学生の間では基本的にINIAD呼びが定着している。
         本サイトでは、わかりやすさを優先し、本来ならINIADと表記する部分を情報連携学部と表記する。</Text>

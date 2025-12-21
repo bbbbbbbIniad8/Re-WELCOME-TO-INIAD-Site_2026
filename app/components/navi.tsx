@@ -44,6 +44,12 @@ const Navi = () => {
             <Link href={`/articles/${a.id}`}>{a.title}</Link>
           </li>
         ))}
+        <NaviH>{CATEGORYS.OTHER.name}</NaviH>
+        {articles.filter((a) => a.category.name === CATEGORYS.OTHER.name).map((a)=> (
+          <li key={a.id} >
+            <Link href={`/articles/${a.id}`}>{a.title}</Link>
+          </li>
+        ))}
       </ul>
     )
 }

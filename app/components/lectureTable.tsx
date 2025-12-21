@@ -1,13 +1,13 @@
-import Text from "./text"
+import {Text} from "./text"
 
-type lecProp = {
+type Prop = {
     name: string,
     unit: number,
     frequency: string,
     test: string,
 }
 
-const LecTable = ({name, unit, frequency, test}: lecProp) => {
+const LecTable = ({name, unit, frequency, test}: Prop) => {
     const style = {
         marginLeft: 10,
     }

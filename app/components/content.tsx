@@ -2,7 +2,7 @@ type ContentProps = {
   children: React.ReactNode; 
 };
 
-const Content = ({children}: ContentProps ) => {
+const Content = ({children}: ContentProps) => {
     const Style = {
         margin: 10,
         padding: 10,

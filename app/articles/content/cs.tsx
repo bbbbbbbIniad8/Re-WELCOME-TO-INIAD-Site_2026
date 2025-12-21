@@ -1,5 +1,5 @@
-import Text from '../../components/text'
-import H from '../../components/heading'
+import {Text} from '../../components/text'
+import {H} from '../../components/heading'
 import LecTable from 'app/components/lectureTable';
 
 export default function CS1() {

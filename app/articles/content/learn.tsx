@@ -1,42 +1,7 @@
-import Text from '../../components/text'
-import H from '../../components/heading'
-
-type Props = {
-    children: React.ReactNode;
-}
-
-const SubH = ({children} : Props) =>{
-    const subHstyle = {
-        marginLeft: '1rem',
-        borderBottom: '2px black solid',
-        fontSize:20,
-        fontWeight: 500,
-        paddingLeft: '1rem',
-        backgroundColor: 'rgb(7, 255, 172)',
-        borderRadius: 5,
-    }
-    return (
-        <h2 style={subHstyle}>
-            {children}
-            </h2>
-    )
-}
-
-// padding付きtextコンポーネント
-const TextP = ({children} : Props) =>{
-    const style = {
-        paddingLeft: '2rem' 
-    }
-    return (
-        <Text><div style={style}>
-            {children}
-            </div>
-        </Text>
-    )
-}
+import { Text, TextP } from '../../components/text'
+import { H, SubH } from '../../components/heading'
 
 export default function Learn() {
-
   return (
     <>
         <H>概要</H>

@@ -15,4 +15,16 @@ const Text = ({children}: Props) => {
     )
 }
 
-export default Text;
+const TextP = ({children} : Props) =>{
+    const style = {
+        paddingLeft: '2rem' 
+    }
+    return (
+        <Text><div style={style}>
+            {children}
+            </div>
+        </Text>
+    )
+}
+
+export {Text, TextP};
