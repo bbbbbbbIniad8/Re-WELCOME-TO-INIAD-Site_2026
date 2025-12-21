@@ -1,6 +1,6 @@
 type TitleProps = {
   title: string;
-  author: string;
+  author: { name: string; isAnonymous: boolean },
   date: string;
   category: string;
 };
@@ -17,10 +17,8 @@ const Title = ({title, author, date, category}: TitleProps) => {
     } as const;
     return (
         <div style={contentStyle}>
-            <div style={titleStyle}>{title}</div> 
-            <div>著者: {author} 作成日: {date} カテゴリ: {category}</div>
-
-
+        <div style={titleStyle}>{title}</div> 
+        <div>著者: {author.isAnonymous === true ? '匿名希望':author.name} 作成日: {date} カテゴリ: {category}</div>
         </div>
     )
 

@@ -1,6 +1,7 @@
 const Header = () => {
     const headerStyle = {
-        fontSize: 24,
+        fontSize: 30,
+        fontWeight: 400,
         padding: 16,
         marginTop: 0,
         background: 'black',
@@ -8,7 +9,7 @@ const Header = () => {
     }
     return (
         <div style={headerStyle}>
-            【非公式】情報連携学部-Welcome-Site
+            【非公式】情報連携学部-Welcome-Site-2026
         </div>
     )
 

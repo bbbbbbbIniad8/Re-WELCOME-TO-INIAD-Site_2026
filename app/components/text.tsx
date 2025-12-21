@@ -5,6 +5,7 @@ type textProps = {
 const Text = ({children}: textProps) => {
     const textStyle = {
         whiteSpace: 'pre-wrap', 
+        paddingLeft: '1rem',
         margin: 5,
     } as const;
     return (
