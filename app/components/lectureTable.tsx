@@ -7,8 +7,6 @@ type lecProp = {
     test: string,
 }
 
-
-
 const LecTable = ({name, unit, frequency, test}: lecProp) => {
     const style = {
         marginLeft: 10,

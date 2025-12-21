@@ -1,20 +1,21 @@
 import Link from "next/link";
 import { articles } from "../src/data/articles";
+import { CATEGORYS } from "app/src/data/category";
 
-type naviHProps = {
+type Props = {
     children: React.ReactNode;
 };
 
-const NaviH = ({children}: naviHProps) =>{
-  const naviHeadingStyle = {
-      fontWeight: 1000,
-      fontSize: 30,
+const NaviH = ({children}: Props) =>{
+  const Style = {
+      fontWeight: 500,
+      fontSize: 20,
       textAlign: 'center',
       border: '1px solid red'
     } as const;
 
     return (
-      <div style={naviHeadingStyle}>{children}</div>
+      <div style={Style}>{children}</div>
     )
 }
 
@@ -28,27 +29,22 @@ const Navi = () => {
         display: 'flex',
         flexDirection: 'column',
         width: '20vw'
-    } as const;
-
-    
+    } as const;    
     return (
        <ul style={naviStyle}>
-        <NaviH>基本</NaviH>
-        {articles.filter((a) => a.category === "base").map((a)=> (
+        <NaviH>{CATEGORYS.BASE.name}</NaviH>
+        {articles.filter((a) => a.category.name === CATEGORYS.BASE.name).map((a)=> (
           <li key={a.id} >
             <Link href={`/articles/${a.id}`}>{a.title}</Link>
           </li>
         ))}
-        <NaviH>講義一覧</NaviH>
-        {articles.filter((a) => a.category === "lecture").map((a)=> (
+        <NaviH>{CATEGORYS.LECTURE.name}一覧</NaviH>
+        {articles.filter((a) => a.category.name === CATEGORYS.LECTURE.name).map((a)=> (
           <li key={a.id} >
             <Link href={`/articles/${a.id}`}>{a.title}</Link>
           </li>
         ))}
       </ul>
-        
     )
-
 }
-
 export default Navi;

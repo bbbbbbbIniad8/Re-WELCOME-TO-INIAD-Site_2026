@@ -1,5 +1,5 @@
 const Header = () => {
-    const headerStyle = {
+    const Style = {
         fontSize: 30,
         fontWeight: 400,
         padding: 16,
@@ -8,11 +8,10 @@ const Header = () => {
         color: 'aqua'
     }
     return (
-        <div style={headerStyle}>
+        <div style={Style}>
             【非公式】情報連携学部-Welcome-Site-2026
         </div>
     )
-
 }
 
 export default Header;

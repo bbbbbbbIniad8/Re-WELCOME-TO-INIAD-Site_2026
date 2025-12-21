@@ -5,7 +5,7 @@ type Props = {
 };
 
 const H = ({children}: Props) => {
-    const headerStyle = {
+    const Style = {
         margin: 5,
         borderLeft: "1rem  solid aqua",
         fontWeight: 400,
@@ -16,7 +16,7 @@ const H = ({children}: Props) => {
         color: 'aqua'
     }
     return (
-        <div style={headerStyle}>
+        <div style={Style}>
             {children}
         </div>
     )

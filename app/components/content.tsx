@@ -3,14 +3,14 @@ type ContentProps = {
 };
 
 const Content = ({children}: ContentProps ) => {
-    const contentStyle = {
+    const Style = {
         margin: 10,
         padding: 10,
         width: '70vw',
         whiteSpace: 'pre-wrap',
     } as const;
     return (
-        <div style={contentStyle} className='content'>
+        <div style={Style} className='content'>
             {children}
         </div>
     )
