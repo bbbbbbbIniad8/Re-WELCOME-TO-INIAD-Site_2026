@@ -30,7 +30,7 @@ const Alart = ({children, backColor, fontColor}: Props) =>{
 
 const Incomplete = () => {
     return (
-        <Alart backColor="yellow" fontColor="red">注意: この記事は未完成です。!!!</Alart>
+        <Alart backColor="yellow" fontColor="red">注意: この記事は未完成です!!!</Alart>
     )
 }
 

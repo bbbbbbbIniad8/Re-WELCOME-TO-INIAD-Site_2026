@@ -17,7 +17,7 @@ const SubH = ({children} : Props) =>{
     return (
         <h2 style={subHstyle}>
             {children}
-            </h2>
+        </h2>
     )
 }
 
